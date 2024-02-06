@@ -3,77 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3</title>
-    <link rel="stylesheet" type="text/css" href="styleEj4.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="pngwing.com.png" width="100" height="100">&sbquo;
-        <h1>Cancelar Suscripcion</h1>
+        <h1>Articulos de Panaderia</h1>
+        <p class="texto">Somos una compañía dedicada a la elaboración y venta de productos de panadería, pastelería y cafetería de excelente calidad
+            Trabajamos en pro de la prevención y control de los impactos ambientales, la optimización de los recursos, el bienestar de 
+            nuestros colaboradores y los estándares de calidad.
+        </p>
     </header>
+    <nav>
+        <button type="button" class="btn btn-warning">PANADERIA</button>
+        <button type="button" class="btn btn-warning">GALLETAS</button>
+        <button type="button" class="btn btn-warning">CAFETERIA</button>
+        <button type="button" class="btn btn-warning">ABASTECIMIENTO</button>
+    </nav>
     <main>
-        <form>
-            <fieldset name="datos_personales">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="ingresa direccion de correo electronico" required autofocus><br><br>
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" name="contrasena" required><br><br>
-                <input type="checkbox" name="rcontrasena"><label for="rcontrasena">Recordar contraseña</label><br><br>
-                <label for="telefono">Telefono:</label>
-                <input type="tel" name="telefono"><br><br>
-                <label for="fnacimiento">Fecha de Nacimiento:</label>
-                <input type="date" name="fnacimiento"><br><br>
-            </fieldset><br>
-            <input type="submit" name="dalta" class="dalta" value="Dar de Alta"><br>
-        </form>
-        <div class="contenido">
-            <nav>
-                <ul class="menu_nav">
-                    <li><a href="" class="inicio">Inicio<span class="tooltip">Entra y descubre</span></a>&nbsp;</li>
-                    <li><a href="producto.html">Productos</a>&nbsp;</li>
-                    <li><a href="">Sobre Nosotros</a>&nbsp;</li>
-                    <li><a href="">Ayuda</a>&nbsp;</li>
-                </ul>
-            </nav>
-            <p title="hola">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, rerum numquam omnis repudiandae 
-                id laudantium praesentium, ab modi veniam pariatur deserunt laboriosam perferendis. Laudantium 
-                tempora id eveniet enim magni ullam.
-            </p>
+        <div class="productos">
+            <div class="card caja" style="width: 18rem;">
+                <img src="img/Almojabanas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Almojabanas</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 800</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/bunuelo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Buñuelos</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 600</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/chicharon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Chicharon</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 500</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/croassant.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Croassant</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 500</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/empanada.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Empanada</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 700</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/marranitas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Marranita</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 1000</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/PanAlinado.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Pan Aliñado</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 2000</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/Pandebono.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Pandebono</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 500</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/Pandeyuca.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">PandeYuca</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 500</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/PanHojaldrado.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Pan Hojaldrado</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 900</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/PanMantequilla.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Pan Mantequilla</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 3000</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/papaRellena.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="titulosProductos">Papa Rellena</p>
+                    <p class="card-text">Some quick example text to build on the card.</p>
+                    <p class="titulosProductos">&#36; 1500</p>
+                </div>
+            </div>
         </div>
     </main>
+    <nav>
+
+    </nav>
     <footer>
-            <p>&#169; 2024 by Jairo Mantilla</p>
+        <p>&#169; 2024 by Jairo Mantilla</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
